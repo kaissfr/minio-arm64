@@ -1,7 +1,9 @@
 FROM arm64v8/alpine:3.11
 
 ENV MINIO_UPDATE off
-ENV MINIO_ACCESS_KEY_FILE=access_key \
+ENV MINIO_ACCESS_KEY=access_key \
+    MINIO_SECRET_KEY=secret_key \
+    MINIO_ACCESS_KEY_FILE=access_key \
     MINIO_SECRET_KEY_FILE=secret_key \
     MINIO_KMS_MASTER_KEY_FILE=kms_master_key \
     MINIO_SSE_MASTER_KEY_FILE=sse_master_key
