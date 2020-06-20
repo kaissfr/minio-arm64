@@ -1,4 +1,4 @@
-FROM arm64v8/alpine:3.11
+FROM arm64v8/alpine:3.12
 
 ENV MINIO_UPDATE off
 ENV MINIO_ACCESS_KEY=access_key \
